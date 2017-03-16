@@ -1,13 +1,19 @@
 namespace engine {
 
 
-    type MovieClipData = {
+    
+
+
+export type MovieClipData = {
 
         name: string,
         frames: MovieClipFrameData[]
     }
 
-    type MovieClipFrameData = {
+    
+
+
+export type MovieClipFrameData = {
         "image": string
     }
 
@@ -165,7 +171,10 @@ namespace engine {
     }
 
 
-    class MovieClip extends Bitmap {
+   
+
+
+export class MovieClip extends Bitmap {
 
         private advancedTime: number = 0;
 

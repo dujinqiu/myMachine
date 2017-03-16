@@ -1,0 +1,215 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,egret_icon_png,description_json,actor1_16_png,actor1_01_png,actor1_02_png,actor1_03_png,actor1_04_png,actor1_05_png,actor1_06_png,actor1_07_png,actor1_08_png,actor1_09_png,actor1_10_png,actor1_11_png,actor1_12_png,actor1_13_png,actor1_14_png,actor1_15_png,actor1_jpg,cloth_png,sword_png,atk_up_png,Balloon_questionMark_gray_png,Balloon_exclamation_png,Balloon_exclamation_gray_png,Balloon_questionMark_png,mhp_up_png,empty_png,emptyEquip_png,error_png,jewe_blue_png,jewel_blue_png,jewel_green_png,skill_chop_png,skill_blizzard_png,Slash_png,actor2_png,outside_sc_shrub_png,outside_bg_grass_png,Slime_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "bg_jpg",
+			"type": "image",
+			"url": "assets/bg.jpg"
+		},
+		{
+			"name": "egret_icon_png",
+			"type": "image",
+			"url": "assets/egret_icon.png"
+		},
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"name": "actor1_16_png",
+			"type": "image",
+			"url": "assets/actor1_16.png"
+		},
+		{
+			"name": "actor1_01_png",
+			"type": "image",
+			"url": "assets/actor1_01.png"
+		},
+		{
+			"name": "actor1_02_png",
+			"type": "image",
+			"url": "assets/actor1_02.png"
+		},
+		{
+			"name": "actor1_03_png",
+			"type": "image",
+			"url": "assets/actor1_03.png"
+		},
+		{
+			"name": "actor1_04_png",
+			"type": "image",
+			"url": "assets/actor1_04.png"
+		},
+		{
+			"name": "actor1_05_png",
+			"type": "image",
+			"url": "assets/actor1_05.png"
+		},
+		{
+			"name": "actor1_06_png",
+			"type": "image",
+			"url": "assets/actor1_06.png"
+		},
+		{
+			"name": "actor1_07_png",
+			"type": "image",
+			"url": "assets/actor1_07.png"
+		},
+		{
+			"name": "actor1_08_png",
+			"type": "image",
+			"url": "assets/actor1_08.png"
+		},
+		{
+			"name": "actor1_09_png",
+			"type": "image",
+			"url": "assets/actor1_09.png"
+		},
+		{
+			"name": "actor1_10_png",
+			"type": "image",
+			"url": "assets/actor1_10.png"
+		},
+		{
+			"name": "actor1_11_png",
+			"type": "image",
+			"url": "assets/actor1_11.png"
+		},
+		{
+			"name": "actor1_12_png",
+			"type": "image",
+			"url": "assets/actor1_12.png"
+		},
+		{
+			"name": "actor1_13_png",
+			"type": "image",
+			"url": "assets/actor1_13.png"
+		},
+		{
+			"name": "actor1_14_png",
+			"type": "image",
+			"url": "assets/actor1_14.png"
+		},
+		{
+			"name": "actor1_15_png",
+			"type": "image",
+			"url": "assets/actor1_15.png"
+		},
+		{
+			"name": "actor1_jpg",
+			"type": "image",
+			"url": "assets/actor1.jpg"
+		},
+		{
+			"name": "cloth_png",
+			"type": "image",
+			"url": "assets/cloth.png"
+		},
+		{
+			"name": "sword_png",
+			"type": "image",
+			"url": "assets/sword.png"
+		},
+		{
+			"name": "atk_up_png",
+			"type": "image",
+			"url": "assets/atk_up.png"
+		},
+		{
+			"name": "Balloon_questionMark_gray_png",
+			"type": "image",
+			"url": "assets/Balloon_questionMark_gray.png"
+		},
+		{
+			"name": "Balloon_exclamation_png",
+			"type": "image",
+			"url": "assets/Balloon_exclamation.png"
+		},
+		{
+			"name": "Balloon_exclamation_gray_png",
+			"type": "image",
+			"url": "assets/Balloon_exclamation_gray.png"
+		},
+		{
+			"name": "Balloon_questionMark_png",
+			"type": "image",
+			"url": "assets/Balloon_questionMark.png"
+		},
+		{
+			"name": "mhp_up_png",
+			"type": "image",
+			"url": "assets/mhp_up.png"
+		},
+		{
+			"name": "empty_png",
+			"type": "image",
+			"url": "assets/empty.png"
+		},
+		{
+			"name": "emptyEquip_png",
+			"type": "image",
+			"url": "assets/emptyEquip.png"
+		},
+		{
+			"name": "error_png",
+			"type": "image",
+			"url": "assets/error.png"
+		},
+		{
+			"name": "jewe_blue_png",
+			"type": "image",
+			"url": "assets/jewe_blue.png"
+		},
+		{
+			"name": "jewel_blue_png",
+			"type": "image",
+			"url": "assets/jewel_blue.png"
+		},
+		{
+			"name": "jewel_green_png",
+			"type": "image",
+			"url": "assets/jewel_green.png"
+		},
+		{
+			"name": "skill_chop_png",
+			"type": "image",
+			"url": "assets/skill_chop.png"
+		},
+		{
+			"name": "skill_blizzard_png",
+			"type": "image",
+			"url": "assets/skill_blizzard.png"
+		},
+		{
+			"name": "Slash_png",
+			"type": "image",
+			"url": "assets/Slash.png"
+		},
+		{
+			"name": "actor2_png",
+			"type": "image",
+			"url": "assets/actor2.png"
+		},
+		{
+			"name": "outside_sc_shrub_png",
+			"type": "image",
+			"url": "assets/outside_sc_shrub.png"
+		},
+		{
+			"name": "outside_bg_grass_png",
+			"type": "image",
+			"url": "assets/outside_bg_grass.png"
+		},
+		{
+			"name": "Slime_png",
+			"type": "image",
+			"url": "assets/Slime.png"
+		}
+	]
+}

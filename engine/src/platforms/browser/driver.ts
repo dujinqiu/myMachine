@@ -28,7 +28,7 @@ namespace engine {
 
     }
 
-    class CanvasRenderer {
+    export class CanvasRenderer {
 
         constructor(private stage: DisplayObjectContainer, private context2D: CanvasRenderingContext2D) {
 
