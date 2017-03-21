@@ -19,34 +19,74 @@ export type MovieClipFrameData = {
 
 
     export interface Drawable {
-        update();
+        render(context2D : CanvasRenderingContext2D);
     }
 
-    export abstract class DisplayObject {
+    export abstract class DisplayObject implements Drawable{
+        parent:DisplayObjectContainer;
+        protected scaleX=1;
+        protected scaleY=1;
+        x=0;
+        y=0;
+        alpha=1;
+        globalAlpha=1;
+        rotation=0;
+        localMatrix=new Matrix();
+        globalMatrix=new Matrix();
+        listener:TouchEvents[]=[];
+        protected width=1;
+        protected height=1;
+        touchEnabled=true;
+        protected normalWidth=-1;
+        protected normalHeight=-1;
+        setWidth(width:number){
+            this.width=width;
+        }
+        setHeight(height:number){
+            this.height=height;
+        }
+        setScaleX(scalex){
+            this.scaleX=scalex;
+            this.width=this.width*this.scaleX;
+        }
+         setScaleY(scaley){
+            this.scaleY=scaley;
+            this.height=this.height*this.scaleY;
+        }
+        getWidth(){
+        return this.width;
+        }
+    getHeight(){
+        return this.height;
+    }
+     draw(context2D : CanvasRenderingContext2D){
 
-        type = "DisplayObject";
+        if(this.normalWidth > 0){
+            this.scaleX = this.width / this.normalWidth;
+        }
 
-        x = 0;
+        if(this.normalHeight > 0){
+            this.scaleY = this.height / this.normalHeight;
+        }
 
-        y = 0;
+        this.localMatrix.updateFromDisplayObject(this.x,this.y,this.scaleX,this.scaleY,this.rotation);
+        if(this.parent){
+            this.globalAlpha = this.parent.globalAlpha * this.alpha;
+            this.globalMatrix = matrixAppendMatrix(this.localMatrix,this.parent.globalMatrix);
+        }
+        if(this.parent == null){
+            this.globalAlpha = this.alpha;
+            this.globalMatrix = this.localMatrix;
+        }
+        context2D.globalAlpha = this.globalAlpha;
+        context2D.setTransform(this.globalMatrix.a,this.globalMatrix.b,this.globalMatrix.c,this.globalMatrix.d,this.globalMatrix.tx,this.globalMatrix.ty);
+        this.render(context2D);
+    }
+    addEventLisener(type:TouchEventsType,touchFunction:Fouction,object:any,ifCapture?:boolean,priority?:number){
+        var touchEvent=new TouchEvents(type,touchFunction,object)
+    }
 
-        scaleX = 1;
 
-        scaleY = 1;
-
-        rotation = 0;
-
-        alpha = 1;
-
-        globalAlpha = 1;
-
-        localMatrix: Matrix;
-
-        globalMatrix: Matrix;
-
-        parent: DisplayObjectContainer;
-
-        touchEnabled: boolean;
 
         constructor(type: string) {
             this.type = type;
@@ -77,6 +117,8 @@ export type MovieClipFrameData = {
 
         abstract hitTest(x: number, y: number): DisplayObject
     }
+
+   
 
 
     export class Bitmap extends DisplayObject {

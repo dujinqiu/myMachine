@@ -1,6 +1,6 @@
 
 namespace MAP {
-    export class MapService extends egret.DisplayObjectContainer {
+    export class MapService extends engine.DisplayObjectContainer {
         private static instance;
         maps: Map[];
         curMap: Map;
@@ -12,7 +12,7 @@ namespace MAP {
             //map 01
 
             this.curNPCList = new Array<NPC>();
-            this.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTap, this);
+            this.addEventListener(engine.TouchEvent.TOUCH_TAP, this.onTap, this);
         }
 
         static getInstance(): MapService {
@@ -25,7 +25,7 @@ namespace MAP {
             this.gameStateMachine = machine;
         }
 
-        onTap(event: egret.TouchEvent) {
+        onTap(event: engine.TouchEvent) {
             if (! (event.target.parent instanceof NPC)) {
                 console.log("tap@mapservice" + event.target.parent);
                 Player.getInstance().Move(this.gameStateMachine, new Vector2(event.stageX, event.stageY), null);

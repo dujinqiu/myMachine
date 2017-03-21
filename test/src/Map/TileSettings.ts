@@ -11,7 +11,7 @@ namespace MAP {
     /**图块的数据结构 
      * @param passSpeed
     */
-    export class Tile extends egret.Bitmap {
+    export class Tile extends engine.Bitmap {
         /**
          * 通行速度系数
          * 1代表正常通过，0代表不能通过
